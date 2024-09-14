@@ -1,0 +1,28 @@
+# Multimodal RAG Architecture for Video Processing
+
+This project showcases a Multimodal Retrieval-Augmented Generation (RAG) architecture designed for video processing. We utilize the OpenAI GPT-4V MultiModal LLM class, which employs CLIP to generate multimodal embeddings. Additionally, we use DuckdbVectorStore for efficient vector storage.
+
+## Requirements
+- Python 3.x
+- OpenAI GPT-4V
+- CLIP
+- DuckdbVectorStore
+- YouTube video downloader (e.g., `pytubefix`)
+
+## Steps
+
+### 1. Download Video from YouTube
+Download the video from YouTube, process it, and store it locally.
+
+### 2. Build Multi-Modal Index and Vector Store
+Create a multi-modal index and vector store for both text and images.
+
+### 3. Retrieve Relevant Images and Context
+Retrieve relevant images and context to augment the prompt.
+
+### 4. Generate Final Response
+Use GPT-4V to reason the correlations between the input query and augmented data, generating the final response.
+
+### 5. Solve Math Problem
+In the last part, demonstrate how the system can solve a math problem step-by-step, producing the desired result.
+
